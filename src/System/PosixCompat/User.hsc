@@ -37,7 +37,11 @@ module System.PosixCompat.User (
 
 #include "HsUnixCompat.h"
 
+#if MIN_VERSION_unix(2,8,0)
+import System.Posix.User.ByteString
+#else
 import System.Posix.User
+#endif
 
 #if __GLASGOW_HASKELL__<605
 getAllGroupEntries :: IO [GroupEntry]

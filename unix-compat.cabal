@@ -48,6 +48,7 @@ Library
     System.PosixCompat.Time
     System.PosixCompat.Types
     System.PosixCompat.Unistd
+    System.PosixCompat.User
 
   build-depends: base >= 4.9 && < 5
 
